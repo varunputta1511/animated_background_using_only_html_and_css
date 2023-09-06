@@ -16,13 +16,13 @@ body
     height: 100vh;
     overflow: hidden;
 }
-.bubbles
+.bubbles             //adding the elements to beanimated
 {
     z-index: -100;
     position: relative;
     display: flex;
 }
-.bubbles span
+.bubbles span                    
 
 {
     z-index: -100;
@@ -38,14 +38,14 @@ body
    animation : animate 15s linear infinite;
    animation-duration: calc(120s / var(--i));
 }
-.bubbles span:nth-child(even)
+.bubbles span:nth-child(even)                //adding the second colour
 { 
    background:#ff2875; 
    box-shadow: 0 0 0 10px #ff287544,
     0 0 50px #ff2875,
     0 0 100px #ff2875; 
 }
-@keyframes animate
+@keyframes animate    //animations
 {
     0%
     {
